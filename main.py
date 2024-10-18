@@ -24,11 +24,10 @@ for art in articles_list:
                 'data': date,
                 'title': title,
                 'link': link,
-                'text': text,
                 })
         else:
             print('В этой статье нет нужных слов')
 
 with open('pars.json', 'w') as file:
-    file.write(json.dumps(parsed_data, ensure_ascii=False, indent=4))
+    file.write(json.dumps(parsed_data, ensure_ascii=False, indent=3))
 
